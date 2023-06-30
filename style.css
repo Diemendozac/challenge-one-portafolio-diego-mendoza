@@ -67,6 +67,7 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sección Menu*/
 
 .menu__header {
+  margin-right: 2%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -91,6 +92,7 @@ section.menu {
 }
 
 .nav__list {
+  padding-right: 3%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -323,7 +325,7 @@ section.experience {
   color: var(--azul-100);
 }
 
-.experience__botao--demo {
+.experience__botao--demo, .formcontato__botao {
   padding: 16px;
   font-size: 16px;
   font-weight: 400;
@@ -384,9 +386,28 @@ section.formcontato {
   margin-top: 0;
 }
 
+.formcontato__botao {
+  width: 40%;
+}
 /*footeer*/
 
-section.footer {
+.footer__rodape {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__img {
+  height: 20%;
+  width: 8%;
+}
+
+.final {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?

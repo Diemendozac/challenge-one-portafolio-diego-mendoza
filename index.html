@@ -33,7 +33,7 @@
           <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
           <li class="menu__list__item"><a href="#formacion">Formación</a></li>
           <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-          <li class="menu__list__item"><a href="#contacto">diemendozac@gmail.com</a></li>
+          <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
         </ul>
         <!--<li class="menu__list__item__contato"><a href="#contacto">contacto@fulana.com</a></li>-->
       </nav>
@@ -268,22 +268,9 @@
             <h3 class="formcontato__subtext pcontent">Complete el siguiente formulario y me pondré en contacto con usted lo antes
               posible. </h3>
             <form class="formcontato__form" name="form">
-              <input type="text">
-              <label class="lbl-nombre">
-                <span class="text-nomb">Nombre</span>
-              </label>
-              <input type="text">
-              <label class="lbl-nombre">
-                <span class="text-nomb">E-mail</span>
-              </label>
-              <input type="text" required>
-              <label class="lbl-nombre">
-                <span class="text-nomb">Asunto</span>
-              </label>
+              <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
               <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-              <label>Asunto</label>
               <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto">
-              <label>Mensaje</label>
               <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje"
                 placeholder="Mensaje"></textarea>
               <button type="submit" class="formcontato__botao">Enviar mensaje</button>
@@ -296,7 +283,10 @@
       <section class="footer">
         <div class="footer__rodape">
           <p>Desarrollado por Diego Mendoza</p>
-          <p>2023</p>
+          <div class="final">
+            <p style="margin:0">2023</p>
+            <img class="footer__img" src="assets/code-end.svg">
+          </div>
         </div>
       </section>
   </div>
