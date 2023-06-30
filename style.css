@@ -408,6 +408,7 @@ section.formcontato {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2vh
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
