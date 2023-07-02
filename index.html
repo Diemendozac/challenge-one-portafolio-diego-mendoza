@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Referencia de la hoja de estilo de Css -->
-  <link rel="stylesheet" href="form-style.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/form-style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- Fonte del Proyecto Raleway -->
@@ -16,6 +16,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+  <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   <title> Mi Portafolio</title>
 </head>
 
@@ -25,7 +29,7 @@
     <section class="menu">
       <header class="menu__header">
         <img class="menu__stars" src="assets/code-outline.svg">
-        <h3 class="menu__title">Diego Mendoza</h3>
+        <h3 class="menu__title subtitle">Diego Mendoza</h3>
       </header>
       <nav class="nav__list">
         <ul class="menu__list">
@@ -36,14 +40,16 @@
           <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
           <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
         </ul>
-        <!--<li class="menu__list__item__contato"><a href="#contacto">contacto@fulana.com</a></li>-->
+        <li class="menu__list__item__contato"><a href="#contacto">diemendoza@gmail.com</a></li>
       </nav>
     </section>
 
     <!-- Sección del Header/Title/Hero -->
     <section class="title">
       <div class="title__div">
-        <img class="title__profile" src="assets\profile2.png">
+        <div class="title__image">
+          <img class="title__profile" src="assets\profile2.png">
+        </div>
         <div class="title__container">
           <h2 class="title__bio">Hello World! Mi nombre es Diego y construyo paginas web</h2>
           <h3 class="title__subsection">Tengo una formación como ingeniero electrónico con conocimientos en desarrollo
@@ -225,6 +231,7 @@
 
     <!-- Sección de Experiencia Profesional/Proyectos-->
     <section class="experience" id="xp">
+      <h3 class="experience__title subtitle">Experiencia Profesional</h3>
       <div class="experience__box">
         <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
         <img class="experience__img" src="assets\secretcode_print.png">
@@ -273,23 +280,29 @@
                     <input type="text" class="form__input nombre" placeholder=" ">
                     <label for="" class="form__label">Nombre</label>
                 </div>
-
+                <span class="error name-error">
+                  <i class="bx bx-error-circle error-icon"></i>
+                  <p class="error-text">Este campo es requerido</p>
+                </span>              
                 <div class="form__div">
                   <input type="text" class="form__input email" placeholder=" ">
                   <label for="" class="form__label">Email</label>
                 </div>
-
+                <span class="error email-error">
+                  <i class="bx bx-error-circle error-icon"></i>
+                  <p class="error-text">Este campo es requerido</p>
+                </span>
                 <div class="form__div">
                   <input type="text" class="form__input asunto" placeholder=" ">
                   <label for="" class="form__label">Asunto</label>
                 </div>
+                <span class="error subject-error">
+                  <i class="bx bx-error-circle error-icon"></i>
+                  <p class="error-text">Este campo es requerido</p>
+                </span>
 
                 <div class="form__textarea mensaje" id="mensaje">
-                  <textarea 
-                    name="textarea" 
-                    rows="10" 
-                    cols="50" 
-                    class="form__input"
+                  <textarea name="textarea" rows="10" cols="50" class="form__input mensaje"
                     id="message" 
                     placeholder="Mensaje"></textarea>
                   
@@ -313,7 +326,15 @@
       </section>
   </div>
   <!-- Script del documento JavaScript -->
-  <script src="validacion.js"></script>
+  <script src="js/script.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init("kzhJDeD9mEWrExj49");
+    })();
+  </script>
+
 </body>
 
 </html>
