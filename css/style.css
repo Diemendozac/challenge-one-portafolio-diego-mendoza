@@ -771,7 +771,7 @@ Utiliza las referencias de los breakpoints @media abajo */
   /*Footer*/
 }
 
-@media (min-width:1350px) {
+@media (min-width:1200px) {
   .title__profile {
     height: 325px;
     width: 325px;
