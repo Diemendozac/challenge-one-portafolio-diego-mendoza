@@ -168,8 +168,8 @@ section.title {
 }
 
 .title__profile {
-  max-width: 40vw;
-  max-height: 45vh;
+  max-width: 300px;
+  max-height: 300px;
   padding: 0 5% 5% 10%;
 }
 
