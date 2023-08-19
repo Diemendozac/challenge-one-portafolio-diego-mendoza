@@ -17,7 +17,7 @@
 .form__div {
   position: relative;
   height: 48px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .form__textarea {
@@ -28,6 +28,7 @@
 
 #message {
   resize: none;
+  padding-top: 0.5rem;
 }
 
 .form__input {
@@ -43,6 +44,7 @@
   outline: none;
   padding: 0 1rem;
   background: #ffffff;
+  width: 30rem;
 }
 
 
@@ -99,3 +101,12 @@
 .form__input:focus {
   border: 1.5px solid var(--first-color);
 }
+
+@media (max-width: 1145px) {
+  .form__input {
+    width: 100%;
+  }
+}
+
+
+
